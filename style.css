@@ -1,0 +1,155 @@
+body {
+    font-family: 'Tahoma', Verdana, sans-serif;
+    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #92a4ff;
+}
+
+h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #92a4ff;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}*/
+
+.container {
+    display: flex;
+    /* Esto permite alinear y distribuir el espacio entre los elementos secundarios */
+    flex-direction: column;
+    /* Para apilar los elementos en columnas */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+.container>article {
+    align-items: center;
+    /* Centrar verticalmente */
+    margin-bottom: 50px;
+    /* Espacio entre cada conjunto */
+    padding: 20px;
+    width: 70%;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+
+.image {
+    float: right;
+    max-width: 25%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.image2 {
+    float: left;
+    max-width: 25%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin: 50px;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div.contenedor-formulario {
+    max-width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: 40px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
